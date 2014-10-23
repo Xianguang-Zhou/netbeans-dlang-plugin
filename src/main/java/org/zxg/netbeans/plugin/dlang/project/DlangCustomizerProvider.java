@@ -14,7 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
 package org.zxg.netbeans.plugin.dlang.project;
 
 import java.awt.Dialog;
@@ -34,8 +33,8 @@ public class DlangCustomizerProvider implements CustomizerProvider {
 
     public final DlangProject project;
 
-    public static final String CUSTOMIZER_FOLDER_PATH =
-            "Projects/org-dlang-project/Customizer";
+    public static final String CUSTOMIZER_FOLDER_PATH
+            = "Projects/org-dlang-project/Customizer";
 
     public DlangCustomizerProvider(DlangProject project) {
         this.project = project;

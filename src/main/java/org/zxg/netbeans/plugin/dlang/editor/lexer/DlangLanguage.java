@@ -14,7 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-@TemplateRegistration(folder = "Other", content = "DlangTemplate.d", displayName = "D File")
-package org.zxg.netbeans.plugin.dlang.filetype;
+package org.zxg.netbeans.plugin.dlang.editor.lexer;
 
-import org.netbeans.api.templates.TemplateRegistration;
+import org.netbeans.api.lexer.Language;
+import org.netbeans.modules.csl.spi.DefaultLanguageConfig;
+import org.netbeans.modules.csl.spi.LanguageRegistration;
+
+/**
+ *
+ * @author Xianguang Zhou <xianguang.zhou@outlook.com>
+ */
+@LanguageRegistration(mimeType = "text/x-dsrc")
+public class DlangLanguage extends DefaultLanguageConfig {
+
+    @Override
+    public Language getLexerLanguage() {
+        return DlangTokenId.getLanguage();
+    }
+
+    @Override
+    public String getDisplayName() {
+        return "D";
+    }
+
+}

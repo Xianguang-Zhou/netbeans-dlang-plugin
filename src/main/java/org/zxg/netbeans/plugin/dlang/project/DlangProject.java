@@ -197,7 +197,7 @@ public class DlangProject implements Project {
             @Override
             public Action[] getActions(boolean arg0) {
                 return new Action[]{
-//                    CommonProjectActions.newFileAction(),
+                    //                    CommonProjectActions.newFileAction(),
                     CommonProjectActions.copyProjectAction(),
                     CommonProjectActions.deleteProjectAction(),
                     CommonProjectActions.customizeProjectAction(),
